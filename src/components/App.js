@@ -6,12 +6,12 @@ import { MainSection } from "./MainSection";
 import { Footer } from "./Footer";
 import { Info } from "./Info";
 
-const App = () => {
+const App = ({ todos }) => {
   return (
     <>
       <section className="todoapp">
         <Header />
-        <MainSection />
+        <MainSection todos={todos} />
         <Footer />
       </section>
       <Info />
